@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   width: 100vw;
+  
+   height: 100vh;
+   gap: 20px;
+   background-color: #fd5;
+}
+.flex-row-1{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 20px;
+}
+.flex-row-2{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    gap: 20px;
+}
+.flex-row-3{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 20px;
+}
+.key{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    scale: 1;
+    transition: all 0.3s ease-in-out;
+    transform: none;
+}
+.key.pressed{
+    scale: 1.2;
+    background-color: #f2f2f2;
+}
+.key.clicked{
+    
+    scale: 0.8;
+    background-color: #f2f2f2;
+}
