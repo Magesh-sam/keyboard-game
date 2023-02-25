@@ -3,17 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100%;
+    width: 100%;
+   background-color: #fd5;
 
+}
 .flex-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   width: 100vw;
-  
-   height: 100vh;
+   width: 80vw;
+  margin: auto;
+   min-height: 100vh;
    gap: 20px;
-   background-color: #fd5;
 }
 .flex-row-1{
     display: grid;
@@ -54,4 +58,27 @@
     
     scale: 0.8;
     background-color: #f2f2f2;
+}
+
+@media (width<=1210px) {
+    .flex-container{
+        scale: 0.7;
+    }
+    
+}
+@media (width<=840px) {
+    .flex-container{
+        scale: 0.5;
+    }
+    h2{
+       font-size: larger;
+    }
+}
+@media (width<=620px) {
+    .flex-container{
+        scale: 0.3;
+    }
+    h2{
+        font-size: x-small;
+     }
 }
